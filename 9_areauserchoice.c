@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h>//header file to include mathematical functions
 int main(){
 	char purpose;
 	printf("Enter the mode of operation.\n 1.Area of Circle.\n 2.Area of Square.\n 3.Area of Rectangle.\n");
