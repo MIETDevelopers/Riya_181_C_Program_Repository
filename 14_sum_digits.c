@@ -1,5 +1,6 @@
-#include<stdio.h>
-int main()
+//program to calculate sum of digit of number using while loop.
+#include<stdio.h>//header file
+int main()//main function
 {
     int a, s;
     printf("Enter value of a: ");
