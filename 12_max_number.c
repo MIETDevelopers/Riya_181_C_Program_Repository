@@ -1,5 +1,7 @@
-#include<stdio.h>
-int main(){
+//Program to find maximum of n number using for loop.
+#include<stdio.h>//header file
+int main()//main function
+{
   int n,num,i;
   int big;
   
