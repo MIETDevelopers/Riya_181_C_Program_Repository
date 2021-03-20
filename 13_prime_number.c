@@ -1,12 +1,13 @@
-#include <stdio.h>
-int main()
+//Program to check whether number is prime or not.
+#include <stdio.h>//header file
+int main()//main function
 {
    int n, i, count = 0;
 
     printf("Enter the Number.\n");
     scanf("%d",&n);//scanning input
 
-    for(i=2; i<=n/2; ++i)
+    for(i=2; i<=n/2; ++i)//for loop
     {
         //Check for non prime number
         if(n%i==0)
