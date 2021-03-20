@@ -1,4 +1,5 @@
-#include<stdio.h>
+//program uisng arithmetic operators
+#include<stdio.h>//header file
 int main(){
     char operator;
     double a, b;
@@ -23,7 +24,7 @@ int main(){
         case '/':
             printf("%.lf / %.lf = %.lf",a, b, a/b);//division function
             break;
-    printf("Error encountered by the input values");
+    printf("Error encountered by the input values");//default
     }
     return 0;
 }
