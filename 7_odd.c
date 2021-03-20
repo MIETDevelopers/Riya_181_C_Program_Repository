@@ -1,6 +1,7 @@
 //Program to check whether no. is odd or even.
 #include <stdio.h>//header file
-int main() {
+int main()//main function 
+{
     int num;
     printf("Enter an integer: ");
     scanf("%d", &num);//scanning number
