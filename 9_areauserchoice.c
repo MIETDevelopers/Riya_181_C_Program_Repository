@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <stdio.h>//header file
 #include <math.h>//header file to include mathematical functions
-int main(){
+int main()//main function
+{
 	char purpose;
 	printf("Enter the mode of operation.\n 1.Area of Circle.\n 2.Area of Square.\n 3.Area of Rectangle.\n");
 	scanf("%c", &purpose); //scanning the operater entered by user.
