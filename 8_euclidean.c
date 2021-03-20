@@ -1,7 +1,8 @@
-#include<stdio.h>  
-#include<math.h>  
+//Program to calculate euclidean distance between two points in a plane.
+#include<stdio.h>//header file 
+#include<math.h>//header file to include mathematical function.
   
-int main()  
+int main()//main function  
 {  
     float x1, y1, x2, y2, distance;  
   
