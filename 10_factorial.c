@@ -1,7 +1,7 @@
 //To Find Factorial Of a Number Using For Loop
 #include<stdio.h> //Header File Input Output
 #include<math.h>//header file mathematical functions
-int main()
+int main()//main function
 {
 	int num, count, fact = 1;
 
