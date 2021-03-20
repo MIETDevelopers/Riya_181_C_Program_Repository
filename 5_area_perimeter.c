@@ -1,4 +1,5 @@
-#include<stdio.h>
+//Program to caluclate area and perimeter of circle, Square and Rectangle.
+#include<stdio.h>//header file
 int main(){
 	float raduisOfCircle, sideOfSquare, legthOfRectangle, breadthOfRectangle;
 	scanf("%f %f %f %f", &raduisOfCircle, &sideOfSquare, &legthOfRectangle, &breadthOfRectangle);
