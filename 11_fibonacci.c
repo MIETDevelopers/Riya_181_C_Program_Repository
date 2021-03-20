@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include<stdio.h>//header file
  
-int main(){
+int main()//main function
+{
    int n, first = 0, second = 1, next, c; 
  
    printf("Enter the number of terms\n");
@@ -10,11 +11,11 @@ int main(){
  
    for ( c = 0 ; c < n ; c++ ) //For Loop 
    {
+      //checking condition
       if ( c <= 1 )
          next = c;
       else
       {
-         //Formula to print the series.
          next = first + second;
          first = second;
          second = next;
