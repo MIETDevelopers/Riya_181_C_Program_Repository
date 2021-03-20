@@ -1,6 +1,4 @@
 //Simple calculator using switch case
-//C Program to Create Simple Calculator using Switch Case 
- 
 #include <stdio.h>//header file
 //function declaration
 float add(float a, float b);
@@ -8,7 +6,7 @@ float sub(float a, float b);
 float multi(float a, float b);
 float div(float a, float b);
 
-int main()
+int main()//main funtion
 {
     char Operator;
     float num1, num2, result = 0;
@@ -34,7 +32,7 @@ int main()
             result = div(num1, num2);//division operation
             break;
         default:
-            printf("\n You have enetered an Invalid Operator ");//default                                
+            printf("\n Wrong choice entered ");//default                                
     }
   
     printf("\n The result of %.2f %c %.2f  = %.2f", num1, Operator, num2, result);
