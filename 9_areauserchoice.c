@@ -1,3 +1,4 @@
+//program to calculate area of circle, square and rectangle based on user choice.
 #include <stdio.h>//header file
 #include <math.h>//header file to include mathematical functions
 int main()//main function
