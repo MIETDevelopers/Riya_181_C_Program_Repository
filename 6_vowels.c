@@ -1,4 +1,5 @@
-#include <stdio.h>
+//Program to check whether alphabet is vowel or consonant.
+#include <stdio.h>//header file
 int main() {
     char c;
     int lowercase_vowel, uppercase_vowel;
@@ -8,6 +9,7 @@ int main() {
 
     uppercase_vowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
 
+   //checking condition
     if (lowercase_vowel || uppercase_vowel)
         printf("%c is a vowel.", c);//alphabet is a vowel
     else
