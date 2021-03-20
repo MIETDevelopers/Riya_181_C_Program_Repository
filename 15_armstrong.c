@@ -1,5 +1,7 @@
-#include <stdio.h>
-int main() {
+//Program to check no. is armstrong or not using while loop
+#include <stdio.h>//header file
+int main()//main funtion
+ {
    int arms = 153; 
    int check, rem, sum = 0;
 
