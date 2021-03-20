@@ -1,31 +1,62 @@
 //Simple calculator using switch case
-#include<stdio.h>//header file
-int main()//main function
+//C Program to Create Simple Calculator using Switch Case 
+ 
+#include <stdio.h>//header file
+//function declaration
+float add(float a, float b);
+float sub(float a, float b);
+float multi(float a, float b);
+float div(float a, float b);
+
+int main()
 {
-    char operator;
-    double a, b;
-    printf("Enter an operator (+, -, *, /):");//printing  the operator to be entered by the user
-    scanf("%c", &operator);//scanning operators
-    printf("Enter two operands:");//printing the numbers 
-    scanf("%lf %lf",&a, &b);//scanning numbers
-    switch(operator)
+    char Operator;
+    float num1, num2, result = 0;
+    
+    printf("\n Please Enter an Operator (+, -, *, /)  :  ");
+    scanf("%c", &Operator);
+    
+    printf("\n Please Enter the Values for two Operands: num1 and num2  :  ");
+    scanf("%f%f", &num1, &num2);
+    
+    switch(Operator)
     {
         case '+':
-            printf("%.lf + %.lf = %.lf",a, b, a+b);//addition funtion
+            result = add(num1, num2);//addition operation
             break;
-
         case '-':
-            printf("%.lf - %.lf = %.lf",a, b, a-b);//subtraction function
-            break;
-
+            result = sub(num1, num2);//subtraction operation
+            break;              
         case '*':
-            printf("%.lf * %.lf = %.lf",a, b, a*b);//mutliplication function
+            result = multi(num1, num2);//multiplication operation
             break;
-
         case '/':
-            printf("%.lf / %.lf = %.lf",a, b, a/b);//division function
+            result = div(num1, num2);//division operation
             break;
-    printf("Error encountered by the input values");//default
+        default:
+            printf("\n You have enetered an Invalid Operator ");//default                                
     }
+  
+    printf("\n The result of %.2f %c %.2f  = %.2f", num1, Operator, num2, result);
+    
     return 0;
+}
+float add(float a, float b)
+{
+    return a + b;
+}
+
+float sub(float a, float b)
+{
+    return a - b;
+}
+
+float multi(float a, float b)
+{
+    return a * b;
+}
+
+float div(float a, float b)
+{
+    return a / b;
 }
