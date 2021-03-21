@@ -1,3 +1,4 @@
+//Program to fibonacci sequence using recursion.
 #include<stdio.h>//header file
  
 int fibonacci(int x);
