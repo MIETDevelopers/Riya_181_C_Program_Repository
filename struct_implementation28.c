@@ -20,9 +20,9 @@ int main() { //main function body starting
 
     printf("Displaying Information:\n");
     printf("Name: ");
-    scanf("%s", s.name);
-    scanf("Roll number: %d\n", s.rollno);
-    scanf("Marks: %.1f\n", s.marks);
+    printf("%s", s.name);
+    printf("Roll number: %d\n", s.rollno);
+    printf("Marks: %.1f\n", s.marks);
 
   return 0;
 }
