@@ -1,33 +1,30 @@
-//Program for swapping using call by refrence.
+//A C Program to swap two numbers using call by reference. 
+//Author: Riya Gupta            
 #include <stdio.h>//header file
-void swap(int num1, int num2)//function defination
+ 
+void swap(int*, int*);
+ 
+int main()//main funtion
 {
-    int temp;
-
-    printf("In Function values before swapping: %d %d\n", num1, num2);
-
-    temp = num1;
-    num1 = num2;
-    num2 = temp;
-
-    printf("In Function values after swapping: %d %d\n\n", num1, num2);
+   int x, y;
+ 
+   printf("Enter the value of x and y\n");
+   scanf("%d%d",&x,&y);
+ 
+   printf("Before Swapping\nx = %d\ny = %d\n", x, y);
+ 
+   swap(&x, &y); 
+ 
+   printf("After Swapping\nx = %d\ny = %d\n", x, y);
+ 
+   return 0;
 }
-
-//main() function definition 
-int main()
+ 
+void swap(int *a, int *b)
 {
-    int n1, n2;
-
-    // Input two integers from user 
-    printf("Enter two numbers: ");
-    scanf("%d%d", &n1, &n2);
-
-    // Print value of n1 and n2 in before swapping 
-    printf("In Main values before swapping: %d %d\n\n", n1, n2);
-
-    // Function call to swap n1 and n2 
-    swap(n1, n2);
-    printf("In Main values after swapping: %d %d", n1, n2);
-
-    return 0;
+   int temp;
+   // Here swapping occurs.
+   temp = *b;
+   *b = *a;
+   *a = temp;   
 }
